@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio | Expresso Nepomuceno</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/cardapio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+
+    <header class="navbar-area">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <div class="logo"><i class="bi bi-cup-hot-fill"></i></div>
+
+                    <div class="brand-text">
+                        <strong>Expresso</strong>
+                        <span>Nepomuceno</span>
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/templates/cardapio.html">
+                                Cardápio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"  href="/templates/pedidos.html">
+                                Fazer pedido
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-destaque" href="/templates/senhaadm.html">
+                                Área Administrativa
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="cabecalho-cardapio">
+
+            <div class="container">
+
+                <span class="mini-title">
+                    <i class="bi bi-cup-hot-fill"></i> NOSSO CARDÁPIO
+                </span>
+
+                <h1>
+                    Sabores preparados
+                    <span>para você.</span>
+                </h1>
+
+                <p>
+                    Escolha seu favorito e aproveite uma experiência
+                    especial em cada xícara.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="categorias">
+
+            <div class="container">
+
+                <div class="categoria-menu">
+
+                    <a href="#cafes" class="categoria-active">
+                        <i class="bi bi-cup-hot-fill"></i> Cafés
+                    </a>
+
+                    <a href="#lanches_salgados">
+                        <i class="bi bi-fork-knife"></i> Lanches salgados
+                    </a>
+
+                    <a href="#gelados">
+                        <i class="bi bi-snow2"></i> Bebidas geladas
+                    </a>
+
+                    <a href="#doces">
+                        <i class="bi bi-suit-heart-fill"></i> Padaria e Confeitaria
+                    </a>
+
+                    <a href="#salada">
+                        <i class="bi bi-star-fill"></i> Opções saudáveis
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="cafes" class="secao-cardapio">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span><i class="bi bi-cup-hot-fill"></i></span>
+
+                    <div>
+                        <small>PARA COMEÇAR BEM</small>
+                        <h2>Nossos cafés</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/espresso.png" alt="Café espresso">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Espresso Clássico</h3>
+
+                                    <span class="preco">
+                                        R$ 6,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Café espresso intenso, aromático
+                                    e preparado na medida certa.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Clássico da casa
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/americano.png" alt="Café americano">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Café Americano</h3>
+
+                                    <span class="preco">
+                                        R$ 7,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Espresso diluído em água quente,
+                                    leve e saboroso.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Tradicional
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/cafe-leite.png" alt="Café com leite">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Café com Leite</h3>
+
+                                    <span class="preco">
+                                        R$ 8,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Uma combinação clássica de café
+                                    fresco e leite cremoso.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Aconchegante
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+                <section id="lanches_salgados" class="secao-cardapio">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span><i class="bi bi-fork-knife"></i></span>
+
+                    <div>
+                        <small>PREPARADOS COM CARINHO</small>
+                        <h2>Lanches salgados</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/lanches.png" alt="Lanches salgados">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Sanduíche natural</h3>
+
+                                    <span class="preco">
+                                        R$ 6,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Sanduíche feito com pão integral e recheado
+                                    com presunto, queijo e alface.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Clássico da casa
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card destaque-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/pao_queijo.png" alt="Pão de queijo recheado">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Pão de queijo recheado</h3>
+
+                                    <span class="preco">
+                                        R$ 3,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Pão de queijo quentinho, recheado com queijo cremoso.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Mais pedido
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/salgado.png" alt="Salgados assados">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Salgados assados</h3>
+
+                                    <span class="preco">
+                                        R$ 4,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Coxinha, quibe e empada assados, 
+                                    perfeitos para acompanhar seu café.
+                                </p>
+
+                                <span class="produto-tag">
+                                    Suave
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+            </div>            
+        </section>
+
+
+        
+
+
+
+        <section id="gelados" class="secao-cardapio">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span><i class="bi bi-snow2"></i></span>
+
+                    <div>
+                        <small>REFRESQUE SEU MOMENTO</small>
+                        <h2>Bebidas geladas</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/cafe-gelado.png" alt="Café gelado">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Café Gelado</h3>
+
+                                    <span class="preco">
+                                        R$ 12,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Café especial servido gelado
+                                    para os dias mais quentes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/frappuccino.png" alt="Frappuccino">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Frappuccino</h3>
+
+                                    <span class="preco">
+                                        R$ 15,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Bebida gelada, cremosa e perfeita
+                                    para refrescar o seu dia.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="produto-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/iced-latte.png" alt="Iced Latte">
+                            </div>
+
+                            <div class="produto-conteudo">
+
+                                <div class="produto-topo">
+
+                                    <h3>Iced Latte</h3>
+
+                                    <span class="preco">
+                                        R$ 13,00
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Latte cremoso servido com gelo
+                                    para uma experiência refrescante.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="doces" class="secao-cardapio secao-alternativa">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span><i class="bi bi-suit-heart-fill"></i></span>
+
+                    <div>
+                        <small>PARA ACOMPANHAR O CAFÉ</small>
+                        <h2>Padaria e confeitaria</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/brownie.png" alt="Brownie">
+                            </div>
+
+                            <h3>Brownie</h3>
+
+                            <p>
+                                Brownie macio de chocolate
+                                com sabor intenso.
+                            </p>
+
+                            <strong>R$ 9,00</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/bolo.png" alt="Bolo de Chocolate">
+                            </div>
+
+                            <h3>Bolo de Chocolate</h3>
+
+                            <p>
+                                Fatia de bolo fofinho com
+                                cobertura cremosa.
+                            </p>
+
+                            <strong>R$ 10,00</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/cookie.png" alt="Cookie da Casa">
+                            </div>
+
+                            <h3>Cookie da Casa</h3>
+
+                            <p>
+                                Cookie artesanal crocante por fora
+                                e macio por dentro.
+                            </p>
+
+                            <strong>R$ 8,00</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="salada" class="secao-cardapio secao-alternativa">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span><i class="bi bi-suit-heart-fill"></i></span>
+
+                    <div>
+                        <small>PARA ACOMPANHAR O CAFÉ</small>
+                        <h2>Opções saudáveis</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/salada.png" alt="Salada de Frutas">
+                            </div>
+
+                            <h3>Salada de Frutas</h3>
+
+                            <p>
+                                Uma mistura refrescante de frutas frescas
+                                selecionadas com cuidado.
+                            </p>
+
+                            <strong>R$ 14,00</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/tapioca.png" alt="Tapioca">
+                            </div>
+
+                            <h3>Tapioca</h3>
+
+                            <p>
+                                Tapioca leve e versátil, perfeita para
+                                um lanche saudável e saboroso.
+                            </p>
+
+                            <strong>R$ 10,00</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="doce-card">
+
+                            <div class="produto-imagem">
+                                <img src="/static/img/iorgute.png" alt="Iorgute com granola">
+                            </div>
+
+                            <h3>Iorgute com granola</h3>
+
+                            <p>
+                                Iorgute natural com granola crocante
+                                e frutas frescas.
+                            </p>
+
+                            <strong>R$ 12,00</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="pedido" class="pedido">
+
+            <div class="container">
+
+                <div class="pedido-box">
+
+                    <div class="pedido-icone">
+                        <i class="bi bi-cup-hot-fill"></i>
+                    </div>
+
+                    <span>
+                        SEU MOMENTO COMEÇA AQUI
+                    </span>
+
+                    <h2>
+                        Encontrou seu favorito?
+                    </h2>
+
+                    <p>
+                        Faça seu pedido e aproveite nossos sabores
+                        preparados especialmente para você.
+                    </p>
+
+                    <a href="/templates/pedidos.html" class="btn-pedido">
+                        Fazer meu pedido
+                        <span><i class="bi bi-arrow-right-circle-fill"></i></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+
+                        <i class="bi bi-cup-hot-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Expresso Nepomuceno
+                        </strong>
+
+                        <p>
+                            Café, carinho e bons momentos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="/index.html">
+                        <i class="bi bi-house-door-fill"></i> Início
+                    </a>
+
+                    <a href="/templates/cardapio.html">
+                        <i class="bi bi-list"></i> Cardápio
+                    </a>
+
+                    <a href="/templates/sobre_nos.html">
+                        <i class="bi bi-info-circle-fill"></i> Sobre nós
+                    </a>
+
+                    <a href="/templates/pedidos.html">
+                        <i class="bi bi-truck"></i> Pedidos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <small>
+                    © 2026 Expresso Nepomuceno
+                    • Feito com <i class="bi bi-suit-heart-fill"></i> e café.
+                </small>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

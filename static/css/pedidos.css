@@ -1,0 +1,1217 @@
+/* =====================================================
+   CORES
+===================================================== */
+
+:root {
+
+    --marrom-escuro: #21140e;
+    --marrom: #3d2519;
+    --marrom-medio: #62402d;
+
+    --caramelo: #b17a4d;
+    --dourado: #c99864;
+
+    --creme: #f8f3ed;
+    --bege: #eadbca;
+    --bege-claro: #fdfaf6;
+
+    --branco: #ffffff;
+
+    --texto: #34251d;
+    --texto-claro: #796a60;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--creme);
+
+    color: var(--texto);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar-area {
+
+    background-color: var(--marrom-escuro);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 5px 25px rgba(33, 20, 14, 0.18);
+
+}
+
+
+.navbar {
+
+    min-height: 90px;
+
+}
+
+
+.navbar-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+}
+
+
+.logo {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: var(--creme);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+}
+
+
+.brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.1;
+
+}
+
+
+.brand-text strong {
+
+    color: var(--branco);
+
+    font-size: 1.15rem;
+
+}
+
+
+.brand-text span {
+
+    color: var(--dourado);
+
+    font-size: 0.78rem;
+
+    letter-spacing: 2px;
+
+}
+
+
+.nav-link {
+
+    color: #eee3da !important;
+
+    margin-left: 15px;
+
+    padding: 10px 14px !important;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: var(--dourado) !important;
+
+}
+
+
+.nav-destaque {
+
+    background-color: var(--caramelo);
+
+    color: white !important;
+
+    border-radius: 30px;
+
+    padding: 10px 20px !important;
+
+}
+
+
+.nav-destaque:hover {
+
+    background-color: var(--dourado);
+
+    color: var(--marrom-escuro) !important;
+
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.pedido-header {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--marrom-escuro),
+            var(--marrom)
+        );
+
+    color: white;
+
+    padding: 85px 20px;
+
+    text-align: center;
+
+}
+
+
+.pedido-header-content {
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+.mini-title {
+
+    color: var(--dourado);
+
+    font-size: .75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.pedido-header h1 {
+
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+
+    line-height: 1;
+
+    margin: 20px 0;
+
+}
+
+
+.pedido-header h1 span {
+
+    color: var(--dourado);
+
+    font-style: italic;
+
+}
+
+
+.pedido-header p {
+
+    color: #e2d7cf;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   ÁREA PRINCIPAL
+===================================================== */
+
+.area-pedido {
+
+    padding: 70px 0 100px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.pedido-card {
+
+    background: var(--branco);
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(98,64,45,.08);
+
+    box-shadow:
+        0 10px 35px rgba(62,40,27,.06);
+
+}
+
+
+.card-title-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.numero {
+
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    background: var(--bege);
+
+    color: var(--caramelo);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+.card-title-area span {
+
+    color: var(--caramelo);
+
+    font-size: .65rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.card-title-area h2 {
+
+    color: var(--marrom-escuro);
+
+    font-size: 1.45rem;
+
+    margin: 4px 0 0;
+
+}
+
+
+/* =====================================================
+   FORMULÁRIOS
+===================================================== */
+
+.form-label {
+
+    color: var(--marrom);
+
+    font-size: .85rem;
+
+    font-weight: bold;
+
+}
+
+
+.form-control {
+
+    border: 1px solid #ded2c8;
+
+    border-radius: 12px;
+
+    padding: 12px 15px;
+
+    background: #fffdfa;
+
+}
+
+
+.form-control:focus {
+
+    border-color: var(--caramelo);
+
+    box-shadow:
+        0 0 0 3px rgba(177,122,77,.12);
+
+}
+
+
+/* =====================================================
+   TÍTULOS DAS CATEGORIAS
+===================================================== */
+
+.categoria-titulo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 35px 0 18px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #eadfd7;
+
+}
+
+
+.categoria-titulo:first-of-type {
+    margin-top: 0;
+}
+
+
+.categoria-titulo i {
+
+    color: var(--caramelo);
+
+    font-size: 20px;
+
+}
+
+
+.categoria-titulo h3 {
+
+    color: var(--marrom);
+
+    font-size: 1.15rem;
+
+    margin: 0;
+
+}
+
+
+/* =====================================================
+   PRODUTOS
+===================================================== */
+
+.produto {
+
+    display: flex;
+
+    min-height: 150px;
+
+    background: var(--bege-claro);
+
+    border: 1px solid #eee3da;
+
+    border-radius: 17px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+
+.produto:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(62,40,27,.09);
+
+}
+
+
+.produto img {
+
+    width: 125px;
+
+    min-width: 125px;
+
+    object-fit: cover;
+
+}
+
+
+.produto-info {
+
+    flex: 1;
+
+    padding: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+.produto-info h4 {
+
+    color: var(--marrom-escuro);
+
+    font-size: 1rem;
+
+    margin-bottom: 7px;
+
+}
+
+
+.produto-info p {
+
+    color: var(--texto-claro);
+
+    font-family: Arial, sans-serif;
+
+    font-size: .72rem;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+}
+
+
+.produto-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+}
+
+
+.produto-bottom strong {
+
+    color: var(--caramelo);
+
+    font-size: .95rem;
+
+}
+
+
+.quantidade {
+
+    width: 58px;
+
+    border: 1px solid #d8c9bd;
+
+    border-radius: 8px;
+
+    padding: 5px;
+
+    text-align: center;
+
+    color: var(--marrom);
+
+    background: white;
+
+}
+
+
+/* =====================================================
+   RECEBIMENTO
+===================================================== */
+
+.opcao input {
+
+    display: none;
+
+}
+
+
+.opcao label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border: 1px solid #ded3ca;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.opcao label:hover {
+
+    border-color: var(--caramelo);
+
+}
+
+
+.opcao input:checked + label {
+
+    border-color: var(--caramelo);
+
+    background: #fcf7f1;
+
+}
+
+
+.opcao label > i {
+
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--bege);
+
+    color: var(--caramelo);
+
+    font-size: 20px;
+
+}
+
+
+.opcao strong {
+
+    display: block;
+
+    color: var(--marrom-escuro);
+
+    font-size: .88rem;
+
+}
+
+
+.opcao small {
+
+    display: block;
+
+    color: var(--texto-claro);
+
+    font-family: Arial, sans-serif;
+
+    margin-top: 5px;
+
+}
+
+
+.endereco {
+
+    margin-top: 25px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eadfd7;
+
+}
+
+
+/* =====================================================
+   PAGAMENTO
+===================================================== */
+
+.pagamento input {
+
+    display: none;
+
+}
+
+
+.pagamento label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 110px;
+
+    border: 1px solid #ded3ca;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.pagamento label:hover {
+
+    border-color: var(--caramelo);
+
+}
+
+
+.pagamento label i {
+
+    font-size: 25px;
+
+    color: var(--caramelo);
+
+}
+
+
+.pagamento label span {
+
+    font-family: Arial, sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: bold;
+
+    color: var(--marrom);
+
+}
+
+
+.pagamento input:checked + label {
+
+    background: var(--marrom);
+
+    border-color: var(--marrom);
+
+}
+
+
+.pagamento input:checked + label span {
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   RESUMO
+===================================================== */
+
+.resumo-card {
+
+    position: sticky;
+
+    top: 110px;
+
+    background: var(--marrom-escuro);
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 50px rgba(33,20,14,.18);
+
+}
+
+
+.resumo-topo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,.12);
+
+}
+
+
+.resumo-topo span {
+
+    color: var(--dourado);
+
+    font-size: .65rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.resumo-topo h2 {
+
+    font-size: 1.7rem;
+
+    margin-top: 5px;
+
+}
+
+
+.resumo-topo > i {
+
+    color: var(--dourado);
+
+    font-size: 27px;
+
+}
+
+
+/* =====================================================
+   RESUMO VAZIO
+===================================================== */
+
+.resumo-vazio {
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+}
+
+
+.resumo-icon {
+
+    width: 65px;
+    height: 65px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: rgba(201,152,100,.12);
+
+    color: var(--dourado);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+
+}
+
+
+.resumo-vazio h3 {
+
+    margin: 15px 0 7px;
+
+    font-size: 1.05rem;
+
+}
+
+
+.resumo-vazio p {
+
+    color: #a99a91;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .75rem;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   VALORES
+===================================================== */
+
+.resumo-linha {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 9px 0;
+
+    color: #c5b8b0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .8rem;
+
+}
+
+
+.resumo-linha strong {
+
+    color: white;
+
+}
+
+
+.resumo-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    margin-top: 12px;
+
+    padding-top: 20px;
+
+}
+
+
+.resumo-total span {
+
+    font-size: 1rem;
+
+}
+
+
+.resumo-total strong {
+
+    color: var(--dourado);
+
+    font-size: 1.4rem;
+
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.btn-finalizar {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: var(--dourado);
+
+    color: var(--marrom-escuro);
+
+    font-weight: bold;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: .3s;
+
+}
+
+
+.btn-finalizar:hover {
+
+    background: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+.seguranca {
+
+    text-align: center;
+
+    color: #95877f;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .67rem;
+
+    margin: 18px 0 0;
+
+}
+
+
+.seguranca i {
+
+    color: var(--dourado);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #160c08;
+
+    color: white;
+
+    padding: 45px 0 20px;
+
+}
+
+
+.footer-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.footer-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.footer-brand .logo {
+
+    width: 45px;
+    height: 45px;
+
+}
+
+
+.footer-brand strong {
+
+    font-size: 1rem;
+
+}
+
+
+.footer-brand p {
+
+    color: #a99c93;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .8rem;
+
+    margin: 5px 0 0;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.footer-links a {
+
+    color: #d5c9c1;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .85rem;
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--dourado);
+
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+}
+
+
+.footer-bottom small {
+
+    color: #8e8178;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .nav-destaque {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .resumo-card {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .pedido-header {
+        padding: 65px 20px;
+    }
+
+
+    .pedido-header h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .area-pedido {
+        padding: 45px 0 70px;
+    }
+
+
+    .pedido-card {
+        padding: 22px;
+    }
+
+
+    .produto {
+        min-height: 140px;
+    }
+
+
+    .produto img {
+        width: 105px;
+        min-width: 105px;
+    }
+
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .produto {
+        flex-direction: column;
+    }
+
+
+    .produto img {
+        width: 100%;
+        height: 170px;
+    }
+
+
+    .pedido-header h1 {
+        font-size: 2.3rem;
+    }
+
+}

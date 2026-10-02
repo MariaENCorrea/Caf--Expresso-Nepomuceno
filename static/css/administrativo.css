@@ -1,0 +1,643 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+:root {
+    --marrom-escuro: #3B2116;
+    --marrom: #6F4532;
+    --marrom-claro: #A87552;
+    --creme: #F7F1E8;
+    --bege: #E9D9C5;
+    --dourado: #C89B5B;
+    --verde: #657C62;
+    --branco: #FFFFFF;
+    --cinza: #6F6F6F;
+    --cinza-claro: #F5F5F5;
+    --vermelho: #B84A3A;
+    --verde-status: #5F8660;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--creme);
+    color: var(--marrom-escuro);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.admin-header {
+    background: var(--marrom-escuro);
+    color: var(--branco);
+    padding: 18px 25px;
+    box-shadow: 0 4px 18px rgba(59, 33, 22, 0.20);
+}
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.logo-cafe {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    background-color: var(--dourado);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    color: var(--marrom-escuro);
+}
+
+
+.logo-area h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.logo-area span {
+    font-size: 13px;
+    color: #DECBB8;
+}
+
+
+.usuario-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+.usuario-info span {
+    font-size: 12px;
+    color: #DCC9B8;
+}
+
+
+.usuario-info strong {
+    font-size: 14px;
+}
+
+
+.btn-sair {
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 9px 15px;
+
+    transition: 0.3s;
+}
+
+
+.btn-sair:hover {
+    background: white;
+    color: var(--marrom-escuro);
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.titulo-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.subtitulo {
+    color: var(--dourado);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.titulo-pagina h2 {
+    margin: 5px 0;
+    font-weight: 700;
+    color: var(--marrom-escuro);
+}
+
+
+.titulo-pagina p {
+    margin: 0;
+    color: var(--cinza);
+}
+
+
+.data-atual {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--marrom);
+}
+
+
+/* ========================================
+   CARDS DE RESUMO
+======================================== */
+
+.card-resumo {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    box-shadow: 0 5px 18px rgba(59, 33, 22, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.card-resumo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(59, 33, 22, 0.12);
+}
+
+
+.icone-resumo {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+
+.icone-resumo.atendimento {
+    background: #F5E7D1;
+    color: #A87532;
+}
+
+
+.icone-resumo.finalizado {
+    background: #E0EBDD;
+    color: var(--verde-status);
+}
+
+
+.icone-resumo.delivery {
+    background: #E5EDF0;
+    color: #52717A;
+}
+
+
+.icone-resumo.mesa {
+    background: #EDE5DF;
+    color: var(--marrom);
+}
+
+
+.card-resumo span {
+    display: block;
+    font-size: 13px;
+    color: var(--cinza);
+}
+
+
+.card-resumo strong {
+    display: block;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+.menu-admin {
+    display: flex;
+    gap: 10px;
+
+    background: white;
+    padding: 8px;
+
+    border-radius: 12px;
+
+    width: fit-content;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+.menu-item {
+    border: none;
+    background: transparent;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    color: var(--cinza);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.menu-item:hover {
+    background: var(--creme);
+    color: var(--marrom);
+}
+
+
+.menu-item.active {
+    background: var(--marrom-escuro);
+    color: white;
+}
+
+
+.menu-item .badge {
+    background: var(--dourado);
+    color: var(--marrom-escuro);
+
+    margin-left: 5px;
+}
+
+
+/* ========================================
+   ÁREA DE PEDIDOS
+======================================== */
+
+.area-pedidos {
+    max-width: 1100px;
+}
+
+
+.cabecalho-pedidos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.cabecalho-pedidos h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+.cabecalho-pedidos h3 i {
+    color: var(--dourado);
+}
+
+
+.cabecalho-pedidos p {
+    margin: 3px 0 0;
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+
+.btn-atualizar {
+    border: 1px solid var(--bege);
+    background: white;
+
+    padding: 9px 15px;
+
+    border-radius: 8px;
+
+    color: var(--marrom);
+
+    transition: 0.3s;
+}
+
+
+.btn-atualizar:hover {
+    background: var(--marrom-escuro);
+    color: white;
+}
+
+
+/* ========================================
+   CARD DO PEDIDO
+======================================== */
+
+.pedido-admin {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 5px 18px rgba(59, 33, 22, 0.07);
+
+    border-left: 5px solid var(--dourado);
+
+    transition: 0.3s;
+}
+
+
+.pedido-admin:hover {
+    box-shadow: 0 8px 25px rgba(59, 33, 22, 0.12);
+}
+
+
+.finalizado-card {
+    border-left-color: var(--verde-status);
+}
+
+
+.pedido-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #EEE5DC;
+
+    padding-bottom: 15px;
+}
+
+
+.numero-pedido {
+    font-weight: 700;
+    color: var(--marrom-escuro);
+}
+
+
+.horario {
+    color: var(--cinza);
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+
+.status {
+    padding: 6px 11px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.status.atendimento {
+    background: #F7EBD6;
+    color: #9A6A25;
+}
+
+
+.status.finalizado {
+    background: #E1EBDD;
+    color: #527553;
+}
+
+
+/* ========================================
+   CONTEÚDO DO PEDIDO
+======================================== */
+
+.pedido-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    padding: 18px 0;
+}
+
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 210px;
+}
+
+
+.cliente > i {
+    font-size: 35px;
+    color: var(--marrom-claro);
+}
+
+
+.cliente strong {
+    display: block;
+}
+
+
+.cliente span {
+    display: block;
+    color: var(--cinza);
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+
+.produtos-pedido {
+    flex: 1;
+}
+
+
+.produto-pedido {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7px 0;
+
+    font-size: 14px;
+}
+
+
+.produto-pedido strong {
+    color: var(--marrom);
+}
+
+
+/* ========================================
+   RODAPÉ DO PEDIDO
+======================================== */
+
+.pedido-rodape {
+    border-top: 1px solid #EEE5DC;
+
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pedido-rodape > strong {
+    font-size: 17px;
+    color: var(--marrom-escuro);
+}
+
+
+.btn-finalizar-pedido {
+    border: none;
+
+    background: var(--marrom-escuro);
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.btn-finalizar-pedido:hover {
+    background: var(--marrom);
+    transform: translateY(-1px);
+}
+
+
+.concluido {
+    color: var(--verde-status);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.admin-footer {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background: var(--marrom-escuro);
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.admin-footer p {
+    margin: 0;
+}
+
+
+.admin-footer span {
+    font-size: 13px;
+    color: #CDB9A7;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .admin-header {
+        padding: 15px;
+    }
+
+
+    .usuario-info {
+        display: none;
+    }
+
+
+    .titulo-pagina {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .data-atual {
+        width: 100%;
+    }
+
+
+    .menu-admin {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+
+    .menu-item {
+        white-space: nowrap;
+    }
+
+
+    .cabecalho-pedidos {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+
+    .pedido-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .cliente {
+        width: 100%;
+    }
+
+
+    .produtos-pedido {
+        width: 100%;
+    }
+
+
+    .pedido-rodape {
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos | Expresso Nepomuceno</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="/static/css/pedidos.css">
+
+</head>
+
+
+<body>
+
+
+    <header class="navbar-area">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <div class="logo"><i class="bi bi-cup-hot-fill"></i></div>
+
+                    <div class="brand-text">
+                        <strong>Expresso</strong>
+                        <span>Nepomuceno</span>
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/templates/cardapio.html">
+                                Cardápio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"  href="/templates/pedidos.html">
+                                Fazer pedido
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-destaque" href="/templates/senhaadm.html">
+                                Área Administrativa
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+
+    </header>
+
+
+    <main class="area-pedido">
+
+
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-8">
+
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                01
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    SEUS DADOS
+                                </span>
+
+                                <h2>
+                                    Informações do pedido
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Nome completo
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="Digite seu nome">
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Telefone
+                                </label>
+
+                                <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label class="form-label">
+                                    Observações
+                                </label>
+
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Alguma observação sobre seu pedido?"></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                02
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    NOSSO CARDÁPIO
+                                </span>
+
+                                <h2>
+                                    Escolha seus favoritos
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-cup-hot-fill"></i>
+
+                            <h3>
+                                Cafés
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/espresso.png" alt="Espresso Clássico">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Espresso Clássico
+                                            </h4>
+
+                                            <p>
+                                                Café espresso intenso e aromático.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 6,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Espresso Clássico">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/americano.png" alt="Café Americano">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café Americano
+                                            </h4>
+
+                                            <p>
+                                                Espresso suave com água quente.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 7,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Café Americano">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cafe-leite.png" alt="Café com Leite">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café com Leite
+                                            </h4>
+
+                                            <p>
+                                                Café equilibrado com leite cremoso.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 8,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Café com Leite">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-stars"></i>
+
+                            <h3>
+                                Lanches salgados
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/lanches.png" alt="Lanches salgados">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Sanduíche natural
+                                            </h4>
+
+                                            <p>
+                                                Pão integral, presunto, queijo e alface.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 6,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Sanduíche natural">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/pao_queijo.png" alt="Pão com queijo">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Pão com queijo
+                                            </h4>
+
+                                            <p>
+                                                Pão com queijo e alface.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 3,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Pão com queijo">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/salgado.png" alt="Salgado assado">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Salgado assado
+                                            </h4>
+
+                                            <p>
+                                                Massa crocante recheada com queijo e temperos.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 4,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Salgado assado">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-snow"></i>
+
+                            <h3>
+                                Cafés gelados
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cafe-gelado.png" alt="Café Gelado">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café Gelado
+                                            </h4>
+
+                                            <p>
+                                                Café refrescante servido bem gelado.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/iced-latte.png" alt="Iced Latte">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Iced Latte
+                                            </h4>
+
+                                            <p>
+                                                Espresso, leite e gelo.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 12,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/frappuccino.png" alt="Frappuccino">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Frappuccino
+                                            </h4>
+
+                                            <p>
+                                                Café gelado cremoso e refrescante.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 14,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-cake2-fill"></i>
+
+                            <h3>
+                                Padaria e confeitaria
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cookie.png" alt="Cookie da Casa">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Cookie da Casa
+                                            </h4>
+
+                                            <p>
+                                                Cookie artesanal com gotas de chocolate.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 8,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/bolo.png" alt="Bolo de Chocolate">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Bolo de Chocolate
+                                            </h4>
+
+                                            <p>
+                                                Fatia de bolo fofinho com cobertura cremosa.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/brownie.png" alt="Brownie">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Brownie
+                                            </h4>
+
+                                            <p>
+                                                Brownie macio com chocolate.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-suit-heart-fill"></i>
+
+                            <h3>
+                                Opções saudáveis
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/salada.png" alt="Salada de Frutas">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Salada de Frutas
+                                            </h4>
+
+                                            <p>
+                                                Salada de frutas frescas e saudáveis.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 14,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/tapioca.png" alt="Tapioca">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Tapioca
+                                            </h4>
+
+                                            <p>
+                                                Tapioca macia com recheio de leite condensado.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/iorgute.png" alt="Iorgute">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Iorgute
+                                            </h4>
+
+                                            <p>
+                                                Iorgute cremoso com frutas vermelhas.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 12,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </section>
+
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                03
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    RECEBIMENTO
+                                </span>
+
+                                <h2>
+                                    Como deseja receber?
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <div class="opcao">
+
+                                    <input type="radio" name="recebimento" id="retirada" checked>
+
+                                    <label for="retirada">
+
+                                        <i class="bi bi-shop"></i>
+
+                                        <div>
+
+                                            <strong>
+                                                Retirar na cafeteria
+                                            </strong>
+
+                                            <small>
+                                                Venha buscar seu pedido.
+                                            </small>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="opcao">
+
+                                    <input type="radio" name="recebimento" id="entrega">
+
+                                    <label for="entrega">
+
+                                        <i class="bi bi-bicycle"></i>
+
+                                        <div>
+
+                                            <strong>
+                                                Receber em casa
+                                            </strong>
+
+                                            <small>
+                                                Entrega no endereço informado.
+                                            </small>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="endereco">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-8">
+
+                                    <label class="form-label">
+                                        Endereço
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Rua e número">
+
+                                </div>
+
+
+                                <div class="col-md-4">
+
+                                    <label class="form-label">
+                                        CEP
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="00000-000">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Bairro
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Seu bairro">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Complemento
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Apartamento, casa...">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                04
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    PAGAMENTO
+                                </span>
+
+                                <h2>
+                                    Escolha a forma de pagamento
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="pix">
+
+                                    <label for="pix">
+
+                                        <i class="bi bi-qr-code"></i>
+
+                                        <span>
+                                            PIX
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="cartao">
+
+                                    <label for="cartao">
+
+                                        <i class="bi bi-credit-card"></i>
+
+                                        <span>
+                                            Cartão
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="dinheiro">
+
+                                    <label for="dinheiro">
+
+                                        <i class="bi bi-cash-coin"></i>
+
+                                        <span>
+                                            Dinheiro
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+                <div class="col-lg-4">
+
+                    <aside class="resumo-card">
+
+                        <div class="resumo-topo">
+
+                            <div>
+
+                                <span>
+                                    SEU PEDIDO
+                                </span>
+
+                                <h2>
+                                    Resumo
+                                </h2>
+
+                            </div>
+
+                            <i class="bi bi-bag-heart"></i>
+
+                        </div>
+
+
+                        <div class="resumo-vazio">
+
+                            <div class="resumo-icon">
+
+                                <i class="bi bi-cup-hot"></i>
+
+                            </div>
+
+                            <h3>
+                                Seu pedido
+                            </h3>
+
+                            <p>
+                                Os produtos escolhidos
+                                aparecerão aqui.
+                            </p>
+
+                        </div>
+
+
+                        <div class="resumo-linha">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong>
+                                R$ 0,00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="resumo-linha">
+
+                            <span>
+                                Entrega
+                            </span>
+
+                            <strong>
+                                A calcular
+                            </strong>
+
+                        </div>
+
+
+                        <div class="resumo-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong>
+                                R$ 0,00
+                            </strong>
+
+                        </div>
+
+
+                        <button type="submit" class="btn-finalizar">
+
+                            Finalizar pedido
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="seguranca">
+
+                            <i class="bi bi-shield-check"></i>
+
+                            Seus dados serão utilizados
+                            apenas para o pedido.
+
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+
+                        <i class="bi bi-cup-hot-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Expresso Nepomuceno
+                        </strong>
+
+                        <p>
+                            Café, carinho e bons momentos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="/index.html">
+                        <i class="bi bi-house-door-fill"></i> Início
+                    </a>
+
+                    <a href="/templates/cardapio.html">
+                        <i class="bi bi-list"></i> Cardápio
+                    </a>
+
+                    <a href="/templates/sobre_nos.html">
+                        <i class="bi bi-info-circle-fill"></i> Sobre nós
+                    </a>
+
+                    <a href="/templates/pedidos.html">
+                        <i class="bi bi-truck"></i> Pedidos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <small>
+                    © 2026 Expresso Nepomuceno
+                    • Feito com <i class="bi bi-suit-heart-fill"></i> e café.
+                </small>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

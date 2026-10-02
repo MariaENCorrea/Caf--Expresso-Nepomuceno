@@ -1,0 +1,770 @@
+/* ========================================
+   VARIÁVEIS
+======================================== */
+
+:root {
+
+    --marrom-escuro: #3B2116;
+
+    --marrom: #6F4532;
+
+    --marrom-claro: #A87552;
+
+    --creme: #F7F1E8;
+
+    --bege: #E9D9C5;
+
+    --dourado: #C89B5B;
+
+    --branco: #FFFFFF;
+
+    --cinza: #777777;
+
+    --vermelho: #B84A3A;
+}
+
+
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color:
+        var(--creme);
+
+}
+
+
+
+/* ========================================
+   PÁGINA
+======================================== */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+}
+
+
+
+/* ========================================
+   LADO ESQUERDO
+======================================== */
+
+.login-apresentacao {
+
+    width: 50%;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3B2116,
+            #6F4532
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* detalhes decorativos */
+
+.login-apresentacao::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    top: -100px;
+
+    left: -100px;
+
+}
+
+
+.login-apresentacao::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    border: 1px solid
+        rgba(255,255,255,0.10);
+
+    bottom: -200px;
+
+    right: -150px;
+
+}
+
+
+
+.apresentacao-conteudo {
+
+    max-width: 430px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.logo-cafe {
+
+    width: 78px;
+
+    height: 78px;
+
+    border-radius: 50%;
+
+    background-color:
+        var(--dourado);
+
+    color:
+        var(--marrom-escuro);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 36px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.20);
+
+}
+
+
+.apresentacao-conteudo h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    line-height: 1.05;
+
+    margin-bottom: 10px;
+
+}
+
+
+.apresentacao-conteudo h1 span {
+
+    color:
+        var(--dourado);
+
+}
+
+
+.apresentacao-conteudo p {
+
+    font-size: 18px;
+
+    color:
+        #E5D6CA;
+
+    margin-bottom: 25px;
+
+}
+
+
+.linha-decorativa {
+
+    width: 70px;
+
+    height: 4px;
+
+    background:
+        var(--dourado);
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.texto-apresentacao {
+
+    display: block;
+
+    color:
+        #D9C8BC;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+
+
+/* ========================================
+   LADO DO LOGIN
+======================================== */
+
+.login-area {
+
+    width: 50%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 460px;
+
+    background:
+        var(--branco);
+
+    border-radius: 22px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(59, 33, 22, 0.10);
+
+}
+
+
+
+/* ========================================
+   CABEÇALHO DO LOGIN
+======================================== */
+
+.icone-login {
+
+    width: 64px;
+
+    height: 64px;
+
+    background:
+        #F2E5D6;
+
+    color:
+        var(--marrom);
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.login-card h2 {
+
+    color:
+        var(--marrom-escuro);
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+
+.descricao {
+
+    color:
+        var(--cinza);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* ========================================
+   CAMPOS
+======================================== */
+
+.campo {
+
+    margin-bottom: 22px;
+
+}
+
+
+.campo label {
+
+    display: block;
+
+    color:
+        var(--marrom-escuro);
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.campo label i {
+
+    color:
+        var(--dourado);
+
+    margin-right: 5px;
+
+}
+
+
+.input-group {
+
+    height: 50px;
+
+}
+
+
+.input-group-text {
+
+    background:
+        #FAF7F3;
+
+    border:
+        1px solid #E5DCD4;
+
+    color:
+        var(--marrom);
+
+}
+
+
+.form-control {
+
+    border:
+        1px solid #E5DCD4;
+
+    box-shadow: none !important;
+
+}
+
+
+.form-control:focus {
+
+    border-color:
+        var(--dourado);
+
+}
+
+
+.btn-visualizar {
+
+    width: 50px;
+
+    border:
+        1px solid #E5DCD4;
+
+    border-left: none;
+
+    background:
+        #FAF7F3;
+
+    color:
+        var(--cinza);
+
+}
+
+
+.btn-visualizar:hover {
+
+    color:
+        var(--marrom);
+
+}
+
+
+
+/* ========================================
+   MENSAGEM DE ERRO
+======================================== */
+
+.mensagem-erro {
+
+    display: none;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background:
+        #FCE8E5;
+
+    color:
+        var(--vermelho);
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.mensagem-erro.mostrar {
+
+    display: flex;
+
+}
+
+
+
+/* ========================================
+   CONTAINER DO BOTÃO
+======================================== */
+
+.botao-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   BOTÃO ENTRAR
+======================================== */
+
+.btn-entrar {
+
+    width: 100%;
+    max-width: 360px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: var(--marrom-escuro);
+    color: var(--branco);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(59, 33, 22, 0.15);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Ícone */
+
+.btn-entrar i {
+
+    font-size: 20px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+/* ========================================
+   EFEITO AO PASSAR O MOUSE
+======================================== */
+
+.btn-entrar:hover {
+
+    background: var(--marrom);
+
+    color: var(--branco);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 22px rgba(59, 33, 22, 0.25);
+
+}
+
+
+/* Movimento do ícone */
+
+.btn-entrar:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ========================================
+   EFEITO AO CLICAR
+======================================== */
+
+.btn-entrar:active {
+
+    transform: translateY(0);
+
+    box-shadow:
+        0 4px 10px rgba(59, 33, 22, 0.18);
+
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 500px) {
+
+    .btn-entrar {
+
+        max-width: 100%;
+
+        height: 52px;
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+/* ========================================
+   SEGURANÇA
+======================================== */
+
+.seguranca {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 22px;
+    color:var(--cinza);
+    font-size: 12px;
+
+}
+
+
+.seguranca i {
+
+    color:
+        var(--verde);
+
+}
+
+
+
+/* ========================================
+   VOLTAR
+======================================== */
+
+.voltar {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color:
+        var(--marrom);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.voltar:hover {
+
+    color:
+        var(--dourado);
+
+}
+
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .login-page {
+
+        flex-direction: column;
+
+    }
+
+
+    .login-apresentacao {
+
+        width: 100%;
+
+        min-height: 330px;
+
+        padding: 35px;
+
+    }
+
+
+    .apresentacao-conteudo {
+
+        max-width: 600px;
+
+    }
+
+
+    .apresentacao-conteudo h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .texto-apresentacao {
+
+        display: none;
+
+    }
+
+
+    .login-area {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px 20px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .login-apresentacao {
+
+        min-height: 280px;
+
+        padding: 25px;
+
+    }
+
+
+    .logo-cafe {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 27px;
+
+    }
+
+
+    .apresentacao-conteudo h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .login-card {
+
+        padding: 30px 22px;
+
+    }
+
+}
