@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expresso Nepomuceno | Café & Aconchego</title>
+
+    <!-- Bootstrap -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link
+            rel="stylesheet"
+            th:href="@{/css/style.css}">
+
+    <!-- Bootstrap Icons -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            type="image/png"
+            th:href="@{/img/favicon.png}">
+
+</head>
+
+<body>
+
+<!-- ============================= -->
+<!-- NAVBAR -->
+<!-- ============================= -->
+
+<header class="navbar-area">
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand" th:href="@{/}">
+
+                <div class="logo">
+                    <i class="bi bi-cup-hot-fill"></i>
+                </div>
+
+                <div class="brand-text">
+                    <strong>Expresso</strong>
+                    <span>Nepomuceno</span>
+                </div>
+
+            </a>
+
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a
+                                class="nav-link active"
+                                th:href="@{/}">
+
+                            Início
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                                class="nav-link"
+                                th:href="@{/cardapio}">
+
+                            Cardápio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                                class="nav-link"
+                                th:href="@{/pedidos}">
+
+                            Fazer pedido
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                                class="nav-link nav-destaque"
+                                th:href="@{/administrativo}">
+
+                            Área Administrativa
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ============================= -->
+<!-- CONTEÚDO -->
+<!-- ============================= -->
+
+<main>
+
+    <!-- HERO / CARROSSEL -->
+
+    <section id="home" class="hero">
+
+        <div
+                id="carrosselCafe"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+
+
+            <!-- INDICADORES -->
+
+            <div class="carousel-indicators">
+
+                <button
+                        type="button"
+                        data-bs-target="#carrosselCafe"
+                        data-bs-slide-to="0"
+                        class="active">
+                </button>
+
+                <button
+                        type="button"
+                        data-bs-target="#carrosselCafe"
+                        data-bs-slide-to="1">
+                </button>
+
+                <button
+                        type="button"
+                        data-bs-target="#carrosselCafe"
+                        data-bs-slide-to="2">
+                </button>
+
+            </div>
+
+
+            <!-- SLIDES -->
+
+            <div class="carousel-inner">
+
+
+                <!-- SLIDE 1 -->
+
+                <div class="carousel-item active">
+
+                    <img
+                            th:src="@{/img/cafe.png}"
+                            alt="Café servido em uma xícara">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption">
+
+                        <div class="hero-content">
+
+                            <div class="mini-title">
+
+                                <i class="bi bi-cup-hot-fill"></i>
+
+                                CAFÉ • SABOR • ACONCHEGO
+
+                            </div>
+
+
+                            <h1>
+
+                                Um café para
+
+                                <span>aquecer</span>
+
+                                seus momentos.
+
+                            </h1>
+
+
+                            <p>
+
+                                Descubra sabores especiais preparados
+                                com carinho para tornar seu dia ainda melhor.
+
+                            </p>
+
+
+                            <div class="hero-buttons">
+
+                                <a
+                                        th:href="@{/cardapio}"
+                                        class="btn-principal">
+
+                                    Conheça o cardápio
+
+                                    <span>
+                                            <i class="bi bi-arrow-right-circle-fill"></i>
+                                        </span>
+
+                                </a>
+
+
+                                <a
+                                        th:href="@{/sobre-nos}"
+                                        class="btn-secundario">
+
+                                    Nossa história
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 2 -->
+
+                <div class="carousel-item">
+
+                    <img
+                            th:src="@{/img/cafe2.png}"
+                            alt="Café sendo preparado">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption">
+
+                        <div class="hero-content">
+
+                            <div class="mini-title">
+
+                                <i class="bi bi-star"></i>
+
+                                PREPARADO COM CARINHO
+
+                            </div>
+
+
+                            <h2>
+
+                                O segredo está
+
+                                <span>em cada detalhe.</span>
+
+                            </h2>
+
+
+                            <p>
+
+                                Grãos selecionados, ingredientes especiais
+                                e muito cuidado em cada preparo.
+
+                            </p>
+
+
+                            <a
+                                    th:href="@{/cardapio}"
+                                    class="btn-principal">
+
+                                Descobrir sabores
+
+                                <span>
+                                        <i class="bi bi-arrow-right-circle-fill"></i>
+                                    </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 3 -->
+
+                <div class="carousel-item">
+
+                    <img
+                            th:src="@{/img/cafe3.png}"
+                            alt="Café espresso servido">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption">
+
+                        <div class="hero-content">
+
+                            <div class="mini-title">
+
+                                <i class="bi bi-suit-heart-fill"></i>
+
+                                SEU MOMENTO
+
+                            </div>
+
+
+                            <h2>
+
+                                Sente-se,
+
+                                <span>relaxe</span>
+
+                                e aproveite.
+
+                            </h2>
+
+
+                            <p>
+
+                                Porque alguns momentos ficam ainda melhores
+                                acompanhados de uma boa xícara de café.
+
+                            </p>
+
+
+                            <a
+                                    th:href="@{/pedidos}"
+                                    class="btn-principal">
+
+                                Fazer meu pedido
+
+                                <span>
+                                        <i class="bi bi-arrow-right-circle-fill"></i>
+                                    </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTROLES -->
+
+            <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carrosselCafe"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carrosselCafe"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- HISTÓRIA -->
+    <!-- ============================= -->
+
+    <section class="historia">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="imagem-historia">
+
+                        <img
+                                th:src="@{/img/cafeteria.png}"
+                                alt="Interior aconchegante da cafeteria">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="texto-historia">
+
+                            <span class="titulo-pequeno">
+
+                                COMO TUDO COMEÇOU
+
+                            </span>
+
+
+                        <h2>
+
+                            Um café criado para
+
+                            <span>
+                                    aproximar pessoas.
+                                </span>
+
+                        </h2>
+
+
+                        <p>
+
+                            O Expresso Nepomuceno nasceu da vontade
+                            de criar um lugar onde as pessoas pudessem
+                            desacelerar e aproveitar os pequenos
+                            momentos do dia.
+
+                        </p>
+
+
+                        <p>
+
+                            Para nós, uma cafeteria não é apenas um
+                            lugar para tomar café. É um espaço para
+                            conversar, trabalhar, encontrar amigos,
+                            descansar ou simplesmente aproveitar
+                            alguns minutos de tranquilidade.
+
+                        </p>
+
+
+                        <h2>
+
+                            Nossa <span>Localização</span>
+
+                        </h2>
+
+
+                        <p>
+
+                            Estamos localizados no coração da cidade,
+                            na Rua Principal, nº 123, Centro.
+                            Venha nos visitar e descubra o aconchego
+                            que preparamos para você.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- ESSÊNCIA -->
+    <!-- ============================= -->
+
+    <section class="essencia">
+
+        <div class="container">
+
+            <div class="titulo-secao text-center">
+
+                    <span>
+                        NOSSA ESSÊNCIA
+                    </span>
+
+
+                <h2>
+
+                    O que faz parte
+
+                    <strong>de nós.</strong>
+
+                </h2>
+
+
+                <p>
+
+                    Mais do que servir café,
+                    queremos proporcionar bons momentos.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="valor-card">
+
+                        <div class="icone">
+
+                            <i class="bi bi-cup-hot-fill"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Qualidade
+                        </h3>
+
+
+                        <p>
+
+                            Escolhemos nossos ingredientes
+                            com cuidado para oferecer bebidas
+                            saborosas e preparadas com atenção
+                            aos detalhes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="valor-card destaque">
+
+                        <div class="icone">
+
+                            <i class="bi bi-suit-heart-fill"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Aconchego
+                        </h3>
+
+
+                        <p>
+
+                            Criamos um ambiente confortável
+                            para que cada pessoa possa se sentir
+                            bem e aproveitar seu momento.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="valor-card">
+
+                        <div class="icone">
+
+                            <i class="bi bi-star-fill"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Carinho
+                        </h3>
+
+
+                        <p>
+
+                            Colocamos carinho em cada preparo,
+                            desde o primeiro contato até o último
+                            gole da sua bebida.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- EXPERIÊNCIA -->
+    <!-- ============================= -->
+
+    <section class="experiencia">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <div class="experiencia-texto">
+
+                            <span class="titulo-pequeno">
+
+                                COMO SERÁ QUE O CAFÉ É FEITO?
+
+                            </span>
+
+
+                        <h2>
+
+                            A história do
+
+                            <span>
+                                    Café.
+                                </span>
+
+                        </h2>
+
+
+                        <h3>
+
+                            A Origem na Etiópia e a Lenda de Kaldi
+
+                        </h3>
+
+
+                        <p>
+
+                            A descoberta do café é contada
+                            através de uma famosa lenda sobre
+                            um pastor chamado Kaldi, na região
+                            de Abissínia (atual Etiópia). Ele
+                            percebeu que suas cabras ficavam
+                            muito energéticas e saltitantes
+                            após comerem os frutos vermelhos
+                            de um arbusto.
+
+                        </p>
+
+
+                        <p>
+
+                            Curioso, Kaldi experimentou os frutos
+                            e sentiu uma nova vitalidade. Ele levou
+                            os grãos a um monge em um monastério
+                            local, que usou os frutos para fazer
+                            uma infusão que ajudava os religiosos
+                            a ficarem acordados durante as longas
+                            horas de orações noturnas.
+
+                        </p>
+
+
+                        <a
+                                th:href="@{/cardapio}"
+                                class="btn-cardapio">
+
+                            Conheça nosso cardápio
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="experiencia-lista">
+
+
+                        <div class="experiencia-item">
+
+                            <div class="item-icone">
+
+                                <i class="bi bi-cup-hot-fill"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Café especial
+                                </h3>
+
+                                <p>
+                                    Preparado na medida certa.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="experiencia-item">
+
+                            <div class="item-icone">
+
+                                <i class="bi bi-house-door-fill"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Ambiente acolhedor
+                                </h3>
+
+                                <p>
+                                    Um espaço para você relaxar.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="experiencia-item">
+
+                            <div class="item-icone">
+
+                                <i class="bi bi-suit-heart-fill"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Momentos especiais
+                                </h3>
+
+                                <p>
+                                    Pequenos momentos que ficam.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ============================= -->
+<!-- FOOTER -->
+<!-- ============================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <i class="bi bi-cup-hot-fill"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Expresso Nepomuceno
+                    </strong>
+
+
+                    <p>
+                        Café, carinho e bons momentos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a th:href="@{/}">
+
+                    <i class="bi bi-house-door-fill"></i>
+
+                    Início
+
+                </a>
+
+
+                <a th:href="@{/cardapio}">
+
+                    <i class="bi bi-list"></i>
+
+                    Cardápio
+
+                </a>
+
+
+                <a th:href="@{/sobre-nos}">
+
+                    <i class="bi bi-info-circle-fill"></i>
+
+                    Sobre nós
+
+                </a>
+
+
+                <a th:href="@{/pedidos}">
+
+                    <i class="bi bi-truck"></i>
+
+                    Pedidos
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <small>
+
+                © 2026 Expresso Nepomuceno
+                • Feito com
+                <i class="bi bi-suit-heart-fill"></i>
+                e café.
+
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
